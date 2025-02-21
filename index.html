@@ -8,87 +8,92 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;  /* Changed background to white */
-            color: #000000;  /* Changed text color to black */
+            background-color: #f4f4f4;
+            color: #2c3e50;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
         }
         /* Sidebar */
         .sidebar {
-            background: #1f1c48;
+            width: 260px;
+            background: #1e3a5f;
             padding: 20px;
-            height: auto;
-            position: relative;
-            margin-bottom: 20px;
-            text-align: center;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            border-right: 3px solid #3498db;
         }
         .sidebar h2 {
-            color: #f4f5f5;
-            font-size: 22px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
             margin-bottom: 15px;
-            font-weight: bold;  /* Made the title bold */
         }
         .sidebar ul {
             list-style: none;
             padding: 0;
-            display: flex;
-            justify-content: center;  /* Aligning the links horizontally */
         }
         .sidebar ul li {
-            padding: 12px 20px;
+            padding: 12px 0;
+            text-align: center;
         }
         .sidebar ul li a {
-            color: #ecf0f1;
+            color: #ffffff;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: bold;
             font-size: 16px;
+            display: block;
+            padding: 10px;
+            transition: 0.3s;
         }
         .sidebar ul li a:hover {
-            color: #1abc9c;
-            text-decoration: underline;
+            background-color: #3498db;
+            border-radius: 5px;
         }
         /* Main Content */
         .content {
-            padding: 30px;
-            max-width: 850px;
-            margin: 0 auto;
+            margin-left: 280px;
+            padding: 40px;
+            max-width: 900px;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #3498db;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 20px;
             border-radius: 8px;
             margin-bottom: 30px;
-            font-size: 30px; /* Increased the font size */
-            font-weight: bold; /* Made the title bold */
+            font-size: 24px;
+            font-weight: bold;
         }
         main h2 {
-            font-size: 26px;
-            border-bottom: 3px solid #1abc9c;
+            font-size: 24px;
+            border-bottom: 3px solid #3498db;
             padding-bottom: 8px;
             margin-top: 20px;
         }
         /* Code Blocks */
         pre {
-            background: #6b7793;
+            background: #2c3e50;
             padding: 15px;
             border-radius: 6px;
             overflow-x: auto;
             font-size: 15px;
+            color: #ffffff;
         }
         .output {
-            background-color: #000000;
+            background-color: #dfe6e9;
             padding: 15px;
             border-radius: 6px;
             margin-bottom: 25px;
             font-size: 16px;
-            color: #ffffff;
         }
         footer {
-            background-color: #f9f9fa;
+            background-color: #1e3a5f;
+            color: white;
             text-align: center;
             padding: 15px;
             margin-top: 30px;
@@ -105,7 +110,6 @@
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#permutations">Permutations</a></li>
             <li><a href="#combinations">Combinations</a></li>
-            <li><a href="#group-theory">Group Theory</a></li>
         </ul>
     </div>
 
