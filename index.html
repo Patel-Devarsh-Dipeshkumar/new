@@ -102,69 +102,61 @@
     </style>
 </head>
 <body>
-
-    <!-- Sidebar Navigation -->
     <div class="sidebar">
         <h2>Topics</h2>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#installation">Installation</a></li>
             <li><a href="#permutations">Permutations</a></li>
             <li><a href="#combinations">Combinations</a></li>
+            <li><a href="#code-guidelines">Code Guidelines</a></li>
         </ul>
     </div>
-
-    <!-- Main Content -->
     <div class="content">
         <header>
             SymPy Combinatorics Tutorial
         </header>
-
         <main>
             <section id="introduction">
                 <h2>Introduction</h2>
-                <p>Welcome to the SymPy Combinatorics tutorial! This guide will walk you through key concepts such as permutations and combinations using SymPy.</p>
+                <p>Welcome to the SymPy Combinatorics tutorial! This guide will walk you through key concepts such as permutations, combinations, and partitions using SymPy.</p>
+                <p>SymPy is a Python library for symbolic mathematics, providing a robust set of combinatorial functions to work with permutations, combinations, and partitions efficiently.</p>
             </section>
-
+            <section id="installation">
+                <h2>Installation</h2>
+                <p>To get started with SymPy, install it using pip:</p>
+                <pre><code class="language-bash">pip install sympy</code></pre>
+            </section>
             <section id="permutations">
                 <h2>Permutations</h2>
-                <p>Permutations involve rearranging elements in different ways. SymPy makes it easy to work with them.</p>
-
                 <h3>Creating a Permutation</h3>
                 <pre><code class="language-python">from sympy.combinatorics import Permutation
-
 p = Permutation([2, 0, 1])
 print("Permutation:", p)
 print("Cycle Notation:", p.cyclic_form)</code></pre>
-
-                <div class="output">
-                    <p><b>Output:</b></p>
-                    <p>Permutation: Permutation([2, 0, 1])</p>
-                    <p>Cycle Notation: [[0, 2, 1]]</p>
-                </div>
             </section>
-
             <section id="combinations">
                 <h2>Combinations</h2>
-                <p>Combinations involve selecting elements without considering order.</p>
-
                 <h3>Example</h3>
                 <pre><code class="language-python">from sympy.functions.combinatorial.numbers import binomial
-
 n, k = 5, 2
 print("Combinations:", binomial(n, k))</code></pre>
-
-                <div class="output">
-                    <p><b>Output:</b></p>
-                    <p>Combinations: 10</p>
-                </div>
+            </section>
+            <section id="code-guidelines">
+                <h2>Code Guidelines</h2>
+                <p>When using SymPy, ensure:</p>
+                <ul>
+                    <li>Imports are structured and minimal.</li>
+                    <li>Functions are modular and reusable.</li>
+                    <li>Use meaningful variable names.</li>
+                    <li>Test your code for different cases.</li>
+                </ul>
             </section>
         </main>
-
         <footer>
             <p>&copy; 2025 Devarsh Patel</p>
         </footer>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
