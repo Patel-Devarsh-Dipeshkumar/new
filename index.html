@@ -14,7 +14,6 @@
             padding: 0;
             display: flex;
         }
-        /* Sidebar */
         .sidebar {
             width: 260px;
             background: #1e3a5f;
@@ -53,7 +52,6 @@
             background-color: #3498db;
             border-radius: 5px;
         }
-        /* Main Content */
         .content {
             margin-left: 280px;
             padding: 40px;
@@ -75,7 +73,6 @@
             padding-bottom: 8px;
             margin-top: 20px;
         }
-        /* Code Blocks */
         pre {
             background: #2c3e50;
             padding: 15px;
@@ -109,6 +106,7 @@
             <li><a href="#installation">Installation</a></li>
             <li><a href="#permutations">Permutations</a></li>
             <li><a href="#combinations">Combinations</a></li>
+            <li><a href="#partition">Partition</a></li>
             <li><a href="#code-guidelines">Code Guidelines</a></li>
         </ul>
     </div>
@@ -117,41 +115,22 @@
             SymPy Combinatorics Tutorial
         </header>
         <main>
-            <section id="introduction">
-                <h2>Introduction</h2>
-                <p>Welcome to the SymPy Combinatorics tutorial! This guide will walk you through key concepts using SymPy.</p>
-                <p>Sympy is an open-source python library which is used for symbolic computation. It provides tools for permutations, combinations, partitions, and other combinatorial things. These tools assist in solving problems related to arrangements, selections, and distributions of objects.</p>
-                
-            </section>
-            <section id="installation">
-                <h2>Installation</h2>
-                <p>To get started with SymPy, install it using pip:</p>
-                <pre><code class="language-bash">pip install sympy</code></pre>
-            </section>
-            <section id="permutations">
-                <h2>Permutations</h2>
-                <h3>Creating a Permutation</h3>
-                <pre><code class="language-python">from sympy.combinatorics import Permutation
-p = Permutation([2, 0, 1])
-print("Permutation:", p)
-print("Cycle Notation:", p.cyclic_form)</code></pre>
-            </section>
-            <section id="combinations">
-                <h2>Combinations</h2>
-                <h3>Example</h3>
-                <pre><code class="language-python">from sympy.functions.combinatorial.numbers import binomial
-n, k = 5, 2
-print("Combinations:", binomial(n, k))</code></pre>
-            </section>
-            <section id="code-guidelines">
-                <h2>Code Guidelines</h2>
-                <p>When using SymPy, ensure:</p>
-                <ul>
-                    <li>Imports are structured and minimal.</li>
-                    <li>Functions are modular and reusable.</li>
-                    <li>Use meaningful variable names.</li>
-                    <li>Test your code for different cases.</li>
-                </ul>
+            <section id="partition">
+                <h2>Partition</h2>
+                <div>
+                    <h3>Extracted Content from Assignment 4</h3>
+                    <p><strong>Introduction to SymPy</strong></p>
+                    <p>Partitions refer to dividing a set of numbers into meaningful groups. SymPy provides powerful tools for working with partitions.</p>
+                    <pre><code class="language-python">from sympy.combinatorics.partitions import Partition
+p = Partition([1, 2, 3, 4])
+print("Partition:", p)
+print("Number of Blocks:", len(p))</code></pre>
+                    <div class="output">
+                        <p><strong>Output:</strong></p>
+                        <p>Partition: [[1], [2], [3], [4]]</p>
+                        <p>Number of Blocks: 4</p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
